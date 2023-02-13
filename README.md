@@ -6,4 +6,4 @@ Priority: master
 Priority: branch
 >>>>>>> branch
 
-User 1: Hello!
+User 2: Hello!
