@@ -1,0 +1,3 @@
+C:/Users/LLR User/2023_20364444/WS4/hello_cmake/CMakeFiles/hello.dir
+C:/Users/LLR User/2023_20364444/WS4/hello_cmake/CMakeFiles/ALL_BUILD.dir
+C:/Users/LLR User/2023_20364444/WS4/hello_cmake/CMakeFiles/ZERO_CHECK.dir
