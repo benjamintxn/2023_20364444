@@ -1,1 +1,9 @@
-This is a cheat sheet with not useful information whats so over.
+git-show: A command line utility that is used to view Git objects.
+
+git-log: A command line utility for exploring a repository's history.
+
+git-checkout: A command line utility that lets you navigate between branches.
+
+git-init: A command line utility that creates a new Git repository.
+
+git-reset: A command line utility that undos local changes to the state of the Git repository.
