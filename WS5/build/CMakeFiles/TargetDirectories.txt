@@ -1,0 +1,4 @@
+C:/Users/LLR User/2023_20364444/WS5/build/CMakeFiles/WS5_Qt.dir
+C:/Users/LLR User/2023_20364444/WS5/build/CMakeFiles/INSTALL.dir
+C:/Users/LLR User/2023_20364444/WS5/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/LLR User/2023_20364444/WS5/build/CMakeFiles/ZERO_CHECK.dir
