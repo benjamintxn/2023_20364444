@@ -10,6 +10,7 @@ MainWindow::MainWindow(QWidget* parent)
     ui->setupUi(this);
     connect(ui->pushButton, &QPushButton::released, this, &MainWindow::handleButton);
     connect(this, &MainWindow::statusUpdateMessage, ui->statusbar, &QStatusBar::showMessage);
+	connect(ui->treeView, &QTreeView::clicked, this, &MainWindow::handleTreeClicked);
 	
 	/* Create / allocate the ModelList */
 	this -> partList = new ModelPartList("PartsList");
@@ -60,6 +61,21 @@ MainWindow::~MainWindow() {
 void MainWindow::handleButton() {
 
     emit statusUpdateMessage(QString("Add button was clicked"), 0);
+
+}
+
+void MainWindow::handleTreeClicked() {
+
+	// Get the index of the selected item
+	QModelIndex index = ui->treeView->currentIndex();
+
+	// Get a point to the item from the index
+	ModelPart* selectedPart = static_cast<ModelPart*>(index.internalPointer());
+
+	// In this case, we will retrieve the name string from the internal QVariant data array
+	QString text = selectedPart->data(0).toString();
+
+	emit statusUpdateMessage(QString("The selected item is: ")+text, 0);
 
 }
 

@@ -30,8 +30,9 @@ public:
     QWidget *centralwidget;
     QVBoxLayout *verticalLayout;
     QHBoxLayout *horizontalLayout_2;
-    QWidget *widget;
     QTreeView *treeView;
+    QWidget *widget;
+    QHBoxLayout *horizontalLayout_3;
     QHBoxLayout *horizontalLayout;
     QPushButton *pushButton;
     QPushButton *pushButton_2;
@@ -43,7 +44,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
-        MainWindow->resize(221, 192);
+        MainWindow->resize(667, 400);
         QSizePolicy sizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
@@ -55,20 +56,22 @@ public:
         verticalLayout->setObjectName("verticalLayout");
         horizontalLayout_2 = new QHBoxLayout();
         horizontalLayout_2->setObjectName("horizontalLayout_2");
+        treeView = new QTreeView(centralwidget);
+        treeView->setObjectName("treeView");
+        sizePolicy.setHeightForWidth(treeView->sizePolicy().hasHeightForWidth());
+        treeView->setSizePolicy(sizePolicy);
+
+        horizontalLayout_2->addWidget(treeView);
+
         widget = new QWidget(centralwidget);
         widget->setObjectName("widget");
-        widget->setEnabled(false);
+        widget->setEnabled(true);
         sizePolicy.setHeightForWidth(widget->sizePolicy().hasHeightForWidth());
         widget->setSizePolicy(sizePolicy);
-        widget->setMinimumSize(QSize(0, 0));
-        treeView = new QTreeView(widget);
-        treeView->setObjectName("treeView");
-        treeView->setGeometry(QRect(60, 130, 150, 192));
-        QSizePolicy sizePolicy1(QSizePolicy::Fixed, QSizePolicy::Expanding);
-        sizePolicy1.setHorizontalStretch(0);
-        sizePolicy1.setVerticalStretch(0);
-        sizePolicy1.setHeightForWidth(treeView->sizePolicy().hasHeightForWidth());
-        treeView->setSizePolicy(sizePolicy1);
+        widget->setMinimumSize(QSize(200, 97));
+        widget->setMaximumSize(QSize(16777215, 16777215));
+        horizontalLayout_3 = new QHBoxLayout(widget);
+        horizontalLayout_3->setObjectName("horizontalLayout_3");
 
         horizontalLayout_2->addWidget(widget);
 
@@ -97,7 +100,7 @@ public:
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
-        menubar->setGeometry(QRect(0, 0, 221, 21));
+        menubar->setGeometry(QRect(0, 0, 667, 21));
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName("statusbar");
