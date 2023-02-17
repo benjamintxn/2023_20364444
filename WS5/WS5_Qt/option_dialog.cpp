@@ -69,6 +69,12 @@ int Option_Dialog::get_bValue() {
 
 }
 
+QString Option_Dialog::getFileName() {
+
+    return ui->lineEdit->text();
+
+}
+
 Option_Dialog::~Option_Dialog()
 {
     delete ui;

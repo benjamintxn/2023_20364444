@@ -2,6 +2,7 @@
 #include <QStatusBar>
 #include <QLineEdit>
 #include <QLabel>
+#include <QFileDialog>
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
 #include "option_dialog.h"
@@ -137,6 +138,10 @@ void MainWindow::on_actionItem_Options_triggered() {
 
 	if (dialog.exec() == QDialog::Accepted) {
 
+		QString user_input = dialog.getFileName();
+		selectedPart->set(0, user_input);
+
+		QString filename = selectedPart->data(0).toString();
 		emit statusUpdateMessage(dialog.getText(), 0);
 
 	}

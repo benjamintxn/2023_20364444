@@ -17,6 +17,7 @@ public:
     ~Option_Dialog();
 
     QString getText();
+    QString getFileName();
 
 public slots:
     void handleSlider_R();
@@ -25,6 +26,7 @@ public slots:
     int get_rValue();
     int get_gValue();
     int get_bValue();
+    
 
 signals: 
     void statusUpdateMessage_R(const QString& message, int timeout);
