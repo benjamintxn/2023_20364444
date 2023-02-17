@@ -125,5 +125,26 @@ void MainWindow::on_actionOpen_File_triggered() {
 
 void MainWindow::on_actionItem_Options_triggered() {
 
+	emit statusUpdateMessage(QString("The selected item is: actionItems_Options triggered"), 0);
+	Option_Dialog dialog(this);
+
+	QModelIndex index = ui->treeView->currentIndex();
+
+	ModelPart* selectedPart = static_cast<ModelPart*>(index.internalPointer());
+
+	QString text = selectedPart->data(0).toString();
+	int R = selectedPart->getColourR();
+
+	if (dialog.exec() == QDialog::Accepted) {
+
+		emit statusUpdateMessage(dialog.getText(), 0);
+
+	}
+	else {
+
+		emit statusUpdateMessage(QString("Dialog rejected"), 0);
+	}
+
+
 }
 
