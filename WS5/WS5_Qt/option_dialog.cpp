@@ -5,9 +5,13 @@
 
 Option_Dialog::Option_Dialog(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::Option_Dialog)
-{
+    ui(new Ui::Option_Dialog) {
+
     ui->setupUi(this);
+    connect(ui->horizontalSlider_3, &QSlider::released, this, &Option_Dialog::handleButton_2);
+    connect(ui->horizontalSlider_2, &QSlider::released, this, &Option_Dialog::handleButton_2);
+    connect(ui->horizontalSlider_1, &QSlider::released, this, &Option_Dialog::handleButton_2);
+
 }
 
 Option_Dialog::~Option_Dialog()
