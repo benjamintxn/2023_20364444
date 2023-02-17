@@ -1,5 +1,5 @@
 #include <QMessageBox>
-#include <qstatusbar.h>
+#include "QFileDialog.h"
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
 
@@ -79,10 +79,23 @@ void MainWindow::handleTreeClicked() {
 
 }
 
-
 void MainWindow::on_actionOpen_File_triggered() {
 
-    emit statusUpdateMessage (QString("Open File action triggered"), 0);
+	QString fileName = QFileDialog::getOpenFileName(this, tr("Open File"), "C:\\", tr("STL Files(*.stl);;Text Files(*.txt)"));
+
+	emit statusUpdateMessage(QString("Open File action triggered"), 0);
+
+	QFile file(fileName);
+	if (file.open(QIODevice::ReadOnly)) {
+
+		emit statusUpdateMessage(QString("File has opened"), 0);
+
+	}
+	else {
+
+		emit statusUpdateMessage(QString("Failed to open file"), 0);
+
+	}
 
 }
 

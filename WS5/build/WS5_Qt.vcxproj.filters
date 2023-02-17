@@ -16,6 +16,9 @@
     <ClCompile Include="C:\Users\LLR User\2023_20364444\WS5\WS5_Qt\ModelPartList.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\LLR User\2023_20364444\WS5\build\WS5_Qt_autogen\EWIEGA46WW\qrc_icons.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Users\LLR User\2023_20364444\WS5\build\WS5_Qt_autogen\mocs_compilation_Release.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -53,10 +56,14 @@
     <CustomBuild Include="C:\Users\LLR User\2023_20364444\WS5\build\CMakeFiles\993634bac17ea2bd601192ab6363c2b3\autouic_(CONFIG).stamp.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
+    <CustomBuild Include="C:\Users\LLR User\2023_20364444\WS5\build\CMakeFiles\46fd4fe36b602304ce7a706d43c5090f\qrc_icons.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
     <CustomBuild Include="C:\Users\LLR User\2023_20364444\WS5\WS5_Qt\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="C:\Users\LLR User\2023_20364444\WS5\WS5_Qt\mainwindow.ui" />
+    <None Include="C:\Users\LLR User\2023_20364444\WS5\WS5_Qt\icons.qrc" />
     <None Include="C:\Users\LLR User\2023_20364444\WS5\build\WS5_Qt_autogen\autouic_Debug.stamp" />
     <None Include="C:\Users\LLR User\2023_20364444\WS5\build\WS5_Qt_autogen\autouic_Release.stamp" />
     <None Include="C:\Users\LLR User\2023_20364444\WS5\build\WS5_Qt_autogen\autouic_MinSizeRel.stamp" />

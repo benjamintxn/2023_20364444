@@ -260,7 +260,8 @@
 		"C:/Qt/6.4.2/msvc2019_64/lib/cmake/Qt6Widgets/Qt6QWindowsVistaStylePluginTargets.cmake",
 		"C:/Qt/6.4.2/msvc2019_64/lib/cmake/Qt6Widgets/Qt6QWindowsVistaStylePluginTargets-debug.cmake",
 		"C:/Qt/6.4.2/msvc2019_64/lib/cmake/Qt6Widgets/Qt6QWindowsVistaStylePluginTargets-relwithdebinfo.cmake",
-		"C:/Qt/6.4.2/msvc2019_64/lib/cmake/Qt6Widgets/Qt6QWindowsVistaStylePluginAdditionalTargetInfo.cmake"
+		"C:/Qt/6.4.2/msvc2019_64/lib/cmake/Qt6Widgets/Qt6QWindowsVistaStylePluginAdditionalTargetInfo.cmake",
+		"C:/Users/LLR User/2023_20364444/WS5/WS5_Qt/icons.qrc"
 	],
 	"CMAKE_SOURCE_DIR" : "C:/Users/LLR User/2023_20364444/WS5/WS5_Qt",
 	"DEP_FILE" : "",

@@ -58,6 +58,9 @@ public:
         MainWindow->setSizePolicy(sizePolicy);
         actionOpen_File = new QAction(MainWindow);
         actionOpen_File->setObjectName("actionOpen_File");
+        QIcon icon;
+        icon.addFile(QString::fromUtf8(":/Downloads/EEEE2046-master/Icons/fileopen.png"), QSize(), QIcon::Normal, QIcon::Off);
+        actionOpen_File->setIcon(icon);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
         verticalLayout = new QVBoxLayout(centralwidget);
