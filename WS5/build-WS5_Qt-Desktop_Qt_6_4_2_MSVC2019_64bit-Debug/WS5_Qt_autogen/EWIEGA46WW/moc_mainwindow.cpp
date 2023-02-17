@@ -8,6 +8,7 @@
 
 #include <memory>
 #include "../../../WS5_Qt/mainwindow.h"
+#include <QtGui/qtextcursor.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'mainwindow.h' doesn't include <QObject>."
@@ -26,15 +27,17 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 namespace {
 struct qt_meta_stringdata_MainWindow_t {
-    uint offsetsAndSizes[16];
+    uint offsetsAndSizes[20];
     char stringdata0[11];
     char stringdata1[20];
     char stringdata2[1];
     char stringdata3[8];
     char stringdata4[8];
     char stringdata5[13];
-    char stringdata6[18];
-    char stringdata7[29];
+    char stringdata6[15];
+    char stringdata7[18];
+    char stringdata8[29];
+    char stringdata9[32];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_MainWindow_t::offsetsAndSizes) + ofs), len 
@@ -46,8 +49,10 @@ Q_CONSTINIT static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_Main
         QT_MOC_LITERAL(32, 7),  // "message"
         QT_MOC_LITERAL(40, 7),  // "timeout"
         QT_MOC_LITERAL(48, 12),  // "handleButton"
-        QT_MOC_LITERAL(61, 17),  // "handleTreeClicked"
-        QT_MOC_LITERAL(79, 28)   // "on_actionOpen_File_triggered"
+        QT_MOC_LITERAL(61, 14),  // "handleButton_2"
+        QT_MOC_LITERAL(76, 17),  // "handleTreeClicked"
+        QT_MOC_LITERAL(94, 28),  // "on_actionOpen_File_triggered"
+        QT_MOC_LITERAL(123, 31)   // "on_actionItem_Options_triggered"
     },
     "MainWindow",
     "statusUpdateMessage",
@@ -55,8 +60,10 @@ Q_CONSTINIT static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_Main
     "message",
     "timeout",
     "handleButton",
+    "handleButton_2",
     "handleTreeClicked",
-    "on_actionOpen_File_triggered"
+    "on_actionOpen_File_triggered",
+    "on_actionItem_Options_triggered"
 };
 #undef QT_MOC_LITERAL
 } // unnamed namespace
@@ -67,7 +74,7 @@ Q_CONSTINIT static const uint qt_meta_data_MainWindow[] = {
       10,       // revision
        0,       // classname
        0,    0, // classinfo
-       4,   14, // methods
+       6,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -75,17 +82,21 @@ Q_CONSTINIT static const uint qt_meta_data_MainWindow[] = {
        1,       // signalCount
 
  // signals: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    2,   38,    2, 0x06,    1 /* Public */,
+       1,    2,   50,    2, 0x06,    1 /* Public */,
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       5,    0,   43,    2, 0x0a,    4 /* Public */,
-       6,    0,   44,    2, 0x0a,    5 /* Public */,
-       7,    0,   45,    2, 0x0a,    6 /* Public */,
+       5,    0,   55,    2, 0x0a,    4 /* Public */,
+       6,    0,   56,    2, 0x0a,    5 /* Public */,
+       7,    0,   57,    2, 0x0a,    6 /* Public */,
+       8,    0,   58,    2, 0x0a,    7 /* Public */,
+       9,    0,   59,    2, 0x08,    8 /* Private */,
 
  // signals: parameters
     QMetaType::Void, QMetaType::QString, QMetaType::Int,    3,    4,
 
  // slots: parameters
+    QMetaType::Void,
+    QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -108,9 +119,13 @@ Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<int, std::false_type>,
         // method 'handleButton'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'handleButton_2'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'handleTreeClicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'on_actionOpen_File_triggered'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_actionItem_Options_triggered'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
@@ -124,8 +139,10 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         switch (_id) {
         case 0: _t->statusUpdateMessage((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2]))); break;
         case 1: _t->handleButton(); break;
-        case 2: _t->handleTreeClicked(); break;
-        case 3: _t->on_actionOpen_File_triggered(); break;
+        case 2: _t->handleButton_2(); break;
+        case 3: _t->handleTreeClicked(); break;
+        case 4: _t->on_actionOpen_File_triggered(); break;
+        case 5: _t->on_actionItem_Options_triggered(); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -159,13 +176,13 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 4)
+        if (_id < 6)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 4;
+        _id -= 6;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 4)
+        if (_id < 6)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 4;
+        _id -= 6;
     }
     return _id;
 }

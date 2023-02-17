@@ -380,7 +380,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\LLR User\2023_20364444\WS5\WS5_Qt\mainwindow.ui;C:\Qt\6.4.2\msvc2019_64\.\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\LLR User\2023_20364444\WS5\WS5_Qt\mainwindow.ui;C:\Users\LLR User\2023_20364444\WS5\WS5_Qt\option_dialog.ui;C:\Qt\6.4.2\msvc2019_64\.\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\LLR User\2023_20364444\WS5\build\WS5_Qt_autogen\autouic_Debug.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
@@ -395,7 +395,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\LLR User\2023_20364444\WS5\WS5_Qt\mainwindow.ui;C:\Qt\6.4.2\msvc2019_64\.\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\LLR User\2023_20364444\WS5\WS5_Qt\mainwindow.ui;C:\Users\LLR User\2023_20364444\WS5\WS5_Qt\option_dialog.ui;C:\Qt\6.4.2\msvc2019_64\.\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\LLR User\2023_20364444\WS5\build\WS5_Qt_autogen\autouic_Release.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
@@ -410,7 +410,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\LLR User\2023_20364444\WS5\WS5_Qt\mainwindow.ui;C:\Qt\6.4.2\msvc2019_64\.\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\LLR User\2023_20364444\WS5\WS5_Qt\mainwindow.ui;C:\Users\LLR User\2023_20364444\WS5\WS5_Qt\option_dialog.ui;C:\Qt\6.4.2\msvc2019_64\.\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\LLR User\2023_20364444\WS5\build\WS5_Qt_autogen\autouic_MinSizeRel.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
@@ -425,7 +425,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\LLR User\2023_20364444\WS5\WS5_Qt\mainwindow.ui;C:\Qt\6.4.2\msvc2019_64\.\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\LLR User\2023_20364444\WS5\WS5_Qt\mainwindow.ui;C:\Users\LLR User\2023_20364444\WS5\WS5_Qt\option_dialog.ui;C:\Qt\6.4.2\msvc2019_64\.\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\LLR User\2023_20364444\WS5\build\WS5_Qt_autogen\autouic_RelWithDebInfo.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
@@ -601,7 +601,12 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\Users\LLR User\2023_20364444\WS5\WS5_Qt\ModelPartList.h" />
     <None Include="C:\Users\LLR User\2023_20364444\WS5\WS5_Qt\icons.qrc">
     </None>
+    <ClCompile Include="C:\Users\LLR User\2023_20364444\WS5\WS5_Qt\option_dialog.cpp" />
+    <ClInclude Include="C:\Users\LLR User\2023_20364444\WS5\WS5_Qt\option_dialog.h" />
+    <None Include="C:\Users\LLR User\2023_20364444\WS5\WS5_Qt\option_dialog.ui">
+    </None>
     <ClInclude Include="C:\Users\LLR User\2023_20364444\WS5\build\WS5_Qt_autogen\include_Debug\ui_mainwindow.h" />
+    <ClInclude Include="C:\Users\LLR User\2023_20364444\WS5\build\WS5_Qt_autogen\include_Debug\ui_option_dialog.h" />
     <None Include="C:\Users\LLR User\2023_20364444\WS5\build\WS5_Qt_autogen\autouic_Debug.stamp">
     </None>
     <ClCompile Include="C:\Users\LLR User\2023_20364444\WS5\build\WS5_Qt_autogen\EWIEGA46WW\qrc_icons.cpp" />
@@ -611,6 +616,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClInclude Include="C:\Users\LLR User\2023_20364444\WS5\build\WS5_Qt_autogen\include_Release\ui_mainwindow.h" />
+    <ClInclude Include="C:\Users\LLR User\2023_20364444\WS5\build\WS5_Qt_autogen\include_Release\ui_option_dialog.h" />
     <None Include="C:\Users\LLR User\2023_20364444\WS5\build\WS5_Qt_autogen\autouic_Release.stamp">
     </None>
     <ClCompile Include="C:\Users\LLR User\2023_20364444\WS5\build\WS5_Qt_autogen\mocs_compilation_MinSizeRel.cpp">
@@ -619,6 +625,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClInclude Include="C:\Users\LLR User\2023_20364444\WS5\build\WS5_Qt_autogen\include_MinSizeRel\ui_mainwindow.h" />
+    <ClInclude Include="C:\Users\LLR User\2023_20364444\WS5\build\WS5_Qt_autogen\include_MinSizeRel\ui_option_dialog.h" />
     <None Include="C:\Users\LLR User\2023_20364444\WS5\build\WS5_Qt_autogen\autouic_MinSizeRel.stamp">
     </None>
     <ClCompile Include="C:\Users\LLR User\2023_20364444\WS5\build\WS5_Qt_autogen\mocs_compilation_RelWithDebInfo.cpp">
@@ -627,6 +634,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClInclude Include="C:\Users\LLR User\2023_20364444\WS5\build\WS5_Qt_autogen\include_RelWithDebInfo\ui_mainwindow.h" />
+    <ClInclude Include="C:\Users\LLR User\2023_20364444\WS5\build\WS5_Qt_autogen\include_RelWithDebInfo\ui_option_dialog.h" />
     <None Include="C:\Users\LLR User\2023_20364444\WS5\build\WS5_Qt_autogen\autouic_RelWithDebInfo.stamp">
     </None>
   </ItemGroup>

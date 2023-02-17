@@ -1,10 +1,4 @@
-C:/Users/LLR\ User/2023_20364444/WS5/build/WS5_Qt_autogen/include_Debug/EWIEGA46WW/moc_mainwindow.cpp: C:/Users/LLR\ User/2023_20364444/WS5/WS5_Qt/mainwindow.h \
-  C:/Qt/6.4.2/msvc2019_64/include/QtCore/QAbstractItemModel \
-  C:/Qt/6.4.2/msvc2019_64/include/QtCore/QList \
-  C:/Qt/6.4.2/msvc2019_64/include/QtCore/QModelIndex \
-  C:/Qt/6.4.2/msvc2019_64/include/QtCore/QString \
-  C:/Qt/6.4.2/msvc2019_64/include/QtCore/QVariant \
-  C:/Qt/6.4.2/msvc2019_64/include/QtCore/qabstractitemmodel.h \
+C:/Users/LLR\ User/2023_20364444/WS5/build-WS5_Qt-Desktop_Qt_6_4_2_MSVC2019_64bit-Debug/WS5_Qt_autogen/EWIEGA46WW/moc_option_dialog.cpp: C:/Users/LLR\ User/2023_20364444/WS5/WS5_Qt/option_dialog.h \
   C:/Qt/6.4.2/msvc2019_64/include/QtCore/qalgorithms.h \
   C:/Qt/6.4.2/msvc2019_64/include/QtCore/qanystringview.h \
   C:/Qt/6.4.2/msvc2019_64/include/QtCore/qarraydata.h \
@@ -17,7 +11,6 @@ C:/Users/LLR\ User/2023_20364444/WS5/build/WS5_Qt_autogen/include_Debug/EWIEGA46
   C:/Qt/6.4.2/msvc2019_64/include/QtCore/qbytearrayalgorithms.h \
   C:/Qt/6.4.2/msvc2019_64/include/QtCore/qbytearraylist.h \
   C:/Qt/6.4.2/msvc2019_64/include/QtCore/qbytearrayview.h \
-  C:/Qt/6.4.2/msvc2019_64/include/QtCore/qcalendar.h \
   C:/Qt/6.4.2/msvc2019_64/include/QtCore/qchar.h \
   C:/Qt/6.4.2/msvc2019_64/include/QtCore/qcompare.h \
   C:/Qt/6.4.2/msvc2019_64/include/QtCore/qcompare_impl.h \
@@ -28,25 +21,18 @@ C:/Users/LLR\ User/2023_20364444/WS5/build/WS5_Qt_autogen/include_Debug/EWIEGA46
   C:/Qt/6.4.2/msvc2019_64/include/QtCore/qcontainertools_impl.h \
   C:/Qt/6.4.2/msvc2019_64/include/QtCore/qcontiguouscache.h \
   C:/Qt/6.4.2/msvc2019_64/include/QtCore/qdatastream.h \
-  C:/Qt/6.4.2/msvc2019_64/include/QtCore/qdatetime.h \
   C:/Qt/6.4.2/msvc2019_64/include/QtCore/qdebug.h \
-  C:/Qt/6.4.2/msvc2019_64/include/QtCore/qdir.h \
-  C:/Qt/6.4.2/msvc2019_64/include/QtCore/qfile.h \
-  C:/Qt/6.4.2/msvc2019_64/include/QtCore/qfiledevice.h \
-  C:/Qt/6.4.2/msvc2019_64/include/QtCore/qfileinfo.h \
   C:/Qt/6.4.2/msvc2019_64/include/QtCore/qflags.h \
   C:/Qt/6.4.2/msvc2019_64/include/QtCore/qforeach.h \
   C:/Qt/6.4.2/msvc2019_64/include/QtCore/qglobal.h \
   C:/Qt/6.4.2/msvc2019_64/include/QtCore/qglobalstatic.h \
   C:/Qt/6.4.2/msvc2019_64/include/QtCore/qhash.h \
   C:/Qt/6.4.2/msvc2019_64/include/QtCore/qhashfunctions.h \
-  C:/Qt/6.4.2/msvc2019_64/include/QtCore/qiodevice.h \
   C:/Qt/6.4.2/msvc2019_64/include/QtCore/qiodevicebase.h \
   C:/Qt/6.4.2/msvc2019_64/include/QtCore/qiterable.h \
   C:/Qt/6.4.2/msvc2019_64/include/QtCore/qiterator.h \
   C:/Qt/6.4.2/msvc2019_64/include/QtCore/qline.h \
   C:/Qt/6.4.2/msvc2019_64/include/QtCore/qlist.h \
-  C:/Qt/6.4.2/msvc2019_64/include/QtCore/qlocale.h \
   C:/Qt/6.4.2/msvc2019_64/include/QtCore/qlogging.h \
   C:/Qt/6.4.2/msvc2019_64/include/QtCore/qmap.h \
   C:/Qt/6.4.2/msvc2019_64/include/QtCore/qmargins.h \
@@ -127,18 +113,11 @@ C:/Users/LLR\ User/2023_20364444/WS5/build/WS5_Qt_autogen/include_Debug/EWIEGA46
   C:/Qt/6.4.2/msvc2019_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.4.2/msvc2019_64/include/QtWidgets/QDialog \
   C:/Qt/6.4.2/msvc2019_64/include/QtWidgets/QLineEdit \
-  C:/Qt/6.4.2/msvc2019_64/include/QtWidgets/QMainWindow \
   C:/Qt/6.4.2/msvc2019_64/include/QtWidgets/qdialog.h \
-  C:/Qt/6.4.2/msvc2019_64/include/QtWidgets/qfiledialog.h \
   C:/Qt/6.4.2/msvc2019_64/include/QtWidgets/qframe.h \
   C:/Qt/6.4.2/msvc2019_64/include/QtWidgets/qlineedit.h \
-  C:/Qt/6.4.2/msvc2019_64/include/QtWidgets/qmainwindow.h \
   C:/Qt/6.4.2/msvc2019_64/include/QtWidgets/qsizepolicy.h \
-  C:/Qt/6.4.2/msvc2019_64/include/QtWidgets/qtabwidget.h \
   C:/Qt/6.4.2/msvc2019_64/include/QtWidgets/qtwidgets-config.h \
   C:/Qt/6.4.2/msvc2019_64/include/QtWidgets/qtwidgetsexports.h \
   C:/Qt/6.4.2/msvc2019_64/include/QtWidgets/qtwidgetsglobal.h \
-  C:/Qt/6.4.2/msvc2019_64/include/QtWidgets/qwidget.h \
-  C:/Users/LLR\ User/2023_20364444/WS5/WS5_Qt/ModelPart.h \
-  C:/Users/LLR\ User/2023_20364444/WS5/WS5_Qt/ModelPartList.h \
-  C:/Users/LLR\ User/2023_20364444/WS5/WS5_Qt/option_dialog.h
+  C:/Qt/6.4.2/msvc2019_64/include/QtWidgets/qwidget.h

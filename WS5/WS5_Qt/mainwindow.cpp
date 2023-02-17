@@ -1,7 +1,10 @@
 #include <QMessageBox>
-#include "QFileDialog.h"
+#include <QStatusBar>
+#include <QLineEdit>
+#include <QLabel>
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
+#include "option_dialog.h"
 
 MainWindow::MainWindow(QWidget* parent)
     : QMainWindow(parent)
@@ -9,6 +12,7 @@ MainWindow::MainWindow(QWidget* parent)
 
     ui->setupUi(this);
     connect(ui->pushButton, &QPushButton::released, this, &MainWindow::handleButton);
+	connect(ui->pushButton_2, &QPushButton::released, this, &MainWindow::handleButton_2);
     connect(this, &MainWindow::statusUpdateMessage, ui->statusbar, &QStatusBar::showMessage);
 	connect(ui->treeView, &QTreeView::clicked, this, &MainWindow::handleTreeClicked);
 	
@@ -50,6 +54,8 @@ MainWindow::MainWindow(QWidget* parent)
 		
 	}
 
+	ui->treeView->addAction(ui->actionItem_Options);
+
 }
 
 MainWindow::~MainWindow() {
@@ -61,6 +67,24 @@ MainWindow::~MainWindow() {
 void MainWindow::handleButton() {
 
     emit statusUpdateMessage(QString("Add button was clicked"), 0);
+
+}
+
+void MainWindow::handleButton_2() {
+
+	Option_Dialog dialog(this);
+
+
+	if (dialog.exec() == QDialog::Accepted) {
+		
+		emit statusUpdateMessage(dialog.getText(), 0);
+
+	}
+	else {
+
+		emit statusUpdateMessage(QString("Dialog rejected"), 0);
+
+	}
 
 }
 
@@ -96,6 +120,10 @@ void MainWindow::on_actionOpen_File_triggered() {
 		emit statusUpdateMessage(QString("Failed to open file"), 0);
 
 	}
+
+}
+
+void MainWindow::on_actionItem_Options_triggered() {
 
 }
 

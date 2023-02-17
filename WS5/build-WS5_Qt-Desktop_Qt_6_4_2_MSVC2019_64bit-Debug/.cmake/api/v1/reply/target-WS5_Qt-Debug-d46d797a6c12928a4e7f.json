@@ -51,7 +51,7 @@
 			{
 				"command" : 3,
 				"file" : 1,
-				"line" : 28,
+				"line" : 31,
 				"parent" : 0
 			},
 			{
@@ -75,7 +75,7 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 60,
+				"line" : 63,
 				"parent" : 0
 			},
 			{
@@ -87,7 +87,7 @@
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 50,
+				"line" : 53,
 				"parent" : 0
 			},
 			{
@@ -374,7 +374,8 @@
 				2,
 				5,
 				7,
-				12
+				10,
+				16
 			]
 		}
 	],
@@ -505,7 +506,8 @@
 				2,
 				5,
 				7,
-				12
+				10,
+				16
 			]
 		},
 		{
@@ -515,7 +517,9 @@
 				3,
 				6,
 				8,
-				10
+				11,
+				13,
+				14
 			]
 		},
 		{
@@ -524,15 +528,16 @@
 			[
 				4,
 				9,
-				11
+				12,
+				15
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				13,
-				14
+				17,
+				18
 			]
 		}
 	],
@@ -595,9 +600,31 @@
 			"sourceGroupIndex" : 2
 		},
 		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "option_dialog.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "option_dialog.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"path" : "option_dialog.ui",
+			"sourceGroupIndex" : 2
+		},
+		{
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "C:/Users/LLR User/2023_20364444/WS5/build-WS5_Qt-Desktop_Qt_6_4_2_MSVC2019_64bit-Debug/WS5_Qt_autogen/include/ui_mainwindow.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/LLR User/2023_20364444/WS5/build-WS5_Qt-Desktop_Qt_6_4_2_MSVC2019_64bit-Debug/WS5_Qt_autogen/include/ui_option_dialog.h",
 			"sourceGroupIndex" : 1
 		},
 		{

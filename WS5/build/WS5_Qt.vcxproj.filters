@@ -16,6 +16,9 @@
     <ClCompile Include="C:\Users\LLR User\2023_20364444\WS5\WS5_Qt\ModelPartList.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\LLR User\2023_20364444\WS5\WS5_Qt\option_dialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Users\LLR User\2023_20364444\WS5\build\WS5_Qt_autogen\EWIEGA46WW\qrc_icons.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -39,16 +42,31 @@
     <ClInclude Include="C:\Users\LLR User\2023_20364444\WS5\WS5_Qt\ModelPartList.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="C:\Users\LLR User\2023_20364444\WS5\WS5_Qt\option_dialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="C:\Users\LLR User\2023_20364444\WS5\build\WS5_Qt_autogen\include_Debug\ui_mainwindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\LLR User\2023_20364444\WS5\build\WS5_Qt_autogen\include_Debug\ui_option_dialog.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\LLR User\2023_20364444\WS5\build\WS5_Qt_autogen\include_Release\ui_mainwindow.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="C:\Users\LLR User\2023_20364444\WS5\build\WS5_Qt_autogen\include_Release\ui_option_dialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="C:\Users\LLR User\2023_20364444\WS5\build\WS5_Qt_autogen\include_MinSizeRel\ui_mainwindow.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="C:\Users\LLR User\2023_20364444\WS5\build\WS5_Qt_autogen\include_MinSizeRel\ui_option_dialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="C:\Users\LLR User\2023_20364444\WS5\build\WS5_Qt_autogen\include_RelWithDebInfo\ui_mainwindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\LLR User\2023_20364444\WS5\build\WS5_Qt_autogen\include_RelWithDebInfo\ui_option_dialog.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -64,6 +82,7 @@
   <ItemGroup>
     <None Include="C:\Users\LLR User\2023_20364444\WS5\WS5_Qt\mainwindow.ui" />
     <None Include="C:\Users\LLR User\2023_20364444\WS5\WS5_Qt\icons.qrc" />
+    <None Include="C:\Users\LLR User\2023_20364444\WS5\WS5_Qt\option_dialog.ui" />
     <None Include="C:\Users\LLR User\2023_20364444\WS5\build\WS5_Qt_autogen\autouic_Debug.stamp" />
     <None Include="C:\Users\LLR User\2023_20364444\WS5\build\WS5_Qt_autogen\autouic_Release.stamp" />
     <None Include="C:\Users\LLR User\2023_20364444\WS5\build\WS5_Qt_autogen\autouic_MinSizeRel.stamp" />
