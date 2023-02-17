@@ -12,6 +12,9 @@ Option_Dialog::Option_Dialog(QWidget* parent) :
     connect(ui->horizontalSlider_3, &QSlider::sliderReleased, this, &Option_Dialog::handleSlider_R);
     connect(ui->horizontalSlider_2, &QSlider::sliderReleased, this, &Option_Dialog::handleSlider_G);
     connect(ui->horizontalSlider, &QSlider::sliderReleased, this, &Option_Dialog::handleSlider_B);
+    connect(this, &Option_Dialog::statusUpdateMessage_R, ui->label_4, &QLabel::setText);
+    connect(this, &Option_Dialog::statusUpdateMessage_G, ui->label_5, &QLabel::setText);
+    connect(this, &Option_Dialog::statusUpdateMessage_B, ui->label_6, &QLabel::setText);
 
 }
 
