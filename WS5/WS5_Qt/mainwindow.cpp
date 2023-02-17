@@ -6,6 +6,7 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
 #include "option_dialog.h"
+#include <QCheckBox>
 
 MainWindow::MainWindow(QWidget* parent)
     : QMainWindow(parent)
@@ -74,10 +75,15 @@ void MainWindow::handleButton() {
 void MainWindow::handleButton_2() {
 
 	Option_Dialog dialog(this);
+    QModelIndex index = ui->treeView->currentIndex();
+    ModelPart* selectedPart = static_cast<ModelPart*>(index.internalPointer());
 
 
 	if (dialog.exec() == QDialog::Accepted) {
 		
+        bool visible = dialog.isVisible();
+        selectedPart->set(1,visible);
+
 		emit statusUpdateMessage(dialog.getText(), 0);
 
 	}

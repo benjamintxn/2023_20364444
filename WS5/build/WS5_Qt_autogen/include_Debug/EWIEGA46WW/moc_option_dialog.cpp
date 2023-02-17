@@ -27,7 +27,7 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 namespace {
 struct qt_meta_stringdata_Option_Dialog_t {
-    uint offsetsAndSizes[26];
+    uint offsetsAndSizes[28];
     char stringdata0[14];
     char stringdata1[22];
     char stringdata2[1];
@@ -41,6 +41,7 @@ struct qt_meta_stringdata_Option_Dialog_t {
     char stringdata10[11];
     char stringdata11[11];
     char stringdata12[11];
+    char stringdata13[10];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_Option_Dialog_t::offsetsAndSizes) + ofs), len 
@@ -58,7 +59,8 @@ Q_CONSTINIT static const qt_meta_stringdata_Option_Dialog_t qt_meta_stringdata_O
         QT_MOC_LITERAL(127, 14),  // "handleSlider_B"
         QT_MOC_LITERAL(142, 10),  // "get_rValue"
         QT_MOC_LITERAL(153, 10),  // "get_gValue"
-        QT_MOC_LITERAL(164, 10)   // "get_bValue"
+        QT_MOC_LITERAL(164, 10),  // "get_bValue"
+        QT_MOC_LITERAL(175, 9)   // "isVisible"
     },
     "Option_Dialog",
     "statusUpdateMessage_R",
@@ -72,7 +74,8 @@ Q_CONSTINIT static const qt_meta_stringdata_Option_Dialog_t qt_meta_stringdata_O
     "handleSlider_B",
     "get_rValue",
     "get_gValue",
-    "get_bValue"
+    "get_bValue",
+    "isVisible"
 };
 #undef QT_MOC_LITERAL
 } // unnamed namespace
@@ -83,7 +86,7 @@ Q_CONSTINIT static const uint qt_meta_data_Option_Dialog[] = {
       10,       // revision
        0,       // classname
        0,    0, // classinfo
-       9,   14, // methods
+      10,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -91,17 +94,18 @@ Q_CONSTINIT static const uint qt_meta_data_Option_Dialog[] = {
        3,       // signalCount
 
  // signals: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    2,   68,    2, 0x06,    1 /* Public */,
-       5,    2,   73,    2, 0x06,    4 /* Public */,
-       6,    2,   78,    2, 0x06,    7 /* Public */,
+       1,    2,   74,    2, 0x06,    1 /* Public */,
+       5,    2,   79,    2, 0x06,    4 /* Public */,
+       6,    2,   84,    2, 0x06,    7 /* Public */,
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       7,    0,   83,    2, 0x0a,   10 /* Public */,
-       8,    0,   84,    2, 0x0a,   11 /* Public */,
-       9,    0,   85,    2, 0x0a,   12 /* Public */,
-      10,    0,   86,    2, 0x0a,   13 /* Public */,
-      11,    0,   87,    2, 0x0a,   14 /* Public */,
-      12,    0,   88,    2, 0x0a,   15 /* Public */,
+       7,    0,   89,    2, 0x0a,   10 /* Public */,
+       8,    0,   90,    2, 0x0a,   11 /* Public */,
+       9,    0,   91,    2, 0x0a,   12 /* Public */,
+      10,    0,   92,    2, 0x0a,   13 /* Public */,
+      11,    0,   93,    2, 0x0a,   14 /* Public */,
+      12,    0,   94,    2, 0x0a,   15 /* Public */,
+      13,    0,   95,    2, 0x0a,   16 /* Public */,
 
  // signals: parameters
     QMetaType::Void, QMetaType::QString, QMetaType::Int,    3,    4,
@@ -115,6 +119,7 @@ Q_CONSTINIT static const uint qt_meta_data_Option_Dialog[] = {
     QMetaType::Int,
     QMetaType::Int,
     QMetaType::Int,
+    QMetaType::Bool,
 
        0        // eod
 };
@@ -151,7 +156,9 @@ Q_CONSTINIT const QMetaObject Option_Dialog::staticMetaObject = { {
         // method 'get_gValue'
         QtPrivate::TypeAndForceComplete<int, std::false_type>,
         // method 'get_bValue'
-        QtPrivate::TypeAndForceComplete<int, std::false_type>
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        // method 'isVisible'
+        QtPrivate::TypeAndForceComplete<bool, std::false_type>
     >,
     nullptr
 } };
@@ -174,6 +181,8 @@ void Option_Dialog::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
             if (_a[0]) *reinterpret_cast< int*>(_a[0]) = std::move(_r); }  break;
         case 8: { int _r = _t->get_bValue();
             if (_a[0]) *reinterpret_cast< int*>(_a[0]) = std::move(_r); }  break;
+        case 9: { bool _r = _t->isVisible();
+            if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -221,13 +230,13 @@ int Option_Dialog::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 9)
+        if (_id < 10)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 9;
+        _id -= 10;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 9)
+        if (_id < 10)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 9;
+        _id -= 10;
     }
     return _id;
 }

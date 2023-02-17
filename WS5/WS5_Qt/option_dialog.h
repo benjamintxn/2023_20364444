@@ -26,6 +26,7 @@ public slots:
     int get_rValue();
     int get_gValue();
     int get_bValue();
+    bool isVisible();
     
 
 signals: 

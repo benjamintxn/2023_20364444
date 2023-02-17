@@ -2,6 +2,7 @@
 #include <QAbstractSlider>
 #include "option_dialog.h"
 #include "ui_option_dialog.h"
+#include <QCheckBox>
 
 
 Option_Dialog::Option_Dialog(QWidget* parent) :
@@ -84,4 +85,9 @@ QString Option_Dialog::getText() {
 
     return ui->lineEdit->text();
 
+}
+
+bool Option_Dialog::isVisible() {
+
+    return ui->checkBox->checkState();
 }
