@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>../../../Downloads/EEEE2046-master/Icons/fileopen.png</file>
+        <file>../../../Downloads/EEEE2046-master/Icons/filesave.png</file>
+        <file>../../../Downloads/EEEE2046-master/Icons/help.png</file>
+        <file>../../../Downloads/EEEE2046-master/Icons/print.png</file>
+        <file>../../../Downloads/EEEE2046-master/Icons/startVR.png</file>
+        <file>../../../Downloads/EEEE2046-master/Icons/stopVR.png</file>
+    </qresource>
+</RCC>

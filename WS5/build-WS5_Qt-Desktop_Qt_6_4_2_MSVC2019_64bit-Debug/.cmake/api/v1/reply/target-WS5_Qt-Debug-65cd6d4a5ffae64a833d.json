@@ -51,7 +51,7 @@
 			{
 				"command" : 3,
 				"file" : 1,
-				"line" : 23,
+				"line" : 28,
 				"parent" : 0
 			},
 			{
@@ -75,7 +75,7 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 55,
+				"line" : 60,
 				"parent" : 0
 			},
 			{
@@ -87,7 +87,7 @@
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 45,
+				"line" : 50,
 				"parent" : 0
 			},
 			{
@@ -371,7 +371,10 @@
 			[
 				0,
 				1,
-				2
+				2,
+				5,
+				7,
+				12
 			]
 		}
 	],
@@ -499,7 +502,10 @@
 			[
 				0,
 				1,
-				2
+				2,
+				5,
+				7,
+				12
 			]
 		},
 		{
@@ -507,7 +513,9 @@
 			"sourceIndexes" : 
 			[
 				3,
-				5
+				6,
+				8,
+				10
 			]
 		},
 		{
@@ -515,14 +523,16 @@
 			"sourceIndexes" : 
 			[
 				4,
-				6
+				9,
+				11
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				7
+				13,
+				14
 			]
 		}
 	],
@@ -558,6 +568,33 @@
 			"sourceGroupIndex" : 2
 		},
 		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "ModelPart.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "ModelPart.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "ModelPartList.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "ModelPartList.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"path" : "icons.qrc",
+			"sourceGroupIndex" : 2
+		},
+		{
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "C:/Users/LLR User/2023_20364444/WS5/build-WS5_Qt-Desktop_Qt_6_4_2_MSVC2019_64bit-Debug/WS5_Qt_autogen/include/ui_mainwindow.h",
@@ -571,8 +608,21 @@
 		},
 		{
 			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/LLR User/2023_20364444/WS5/build-WS5_Qt-Desktop_Qt_6_4_2_MSVC2019_64bit-Debug/WS5_Qt_autogen/EWIEGA46WW/qrc_icons.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "C:/Users/LLR User/2023_20364444/WS5/build-WS5_Qt-Desktop_Qt_6_4_2_MSVC2019_64bit-Debug/WS5_Qt_autogen/timestamp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/LLR User/2023_20364444/WS5/build-WS5_Qt-Desktop_Qt_6_4_2_MSVC2019_64bit-Debug/WS5_Qt_autogen/EWIEGA46WW/qrc_icons.cpp.rule",
 			"sourceGroupIndex" : 3
 		}
 	],
