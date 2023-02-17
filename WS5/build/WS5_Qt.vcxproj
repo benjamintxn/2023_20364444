@@ -498,6 +498,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\Users\LLR User\2023_20364444\WS5\WS5_Qt\mainwindow.h" />
     <None Include="C:\Users\LLR User\2023_20364444\WS5\WS5_Qt\mainwindow.ui">
     </None>
+    <ClCompile Include="C:\Users\LLR User\2023_20364444\WS5\WS5_Qt\ModelPart.cpp" />
+    <ClInclude Include="C:\Users\LLR User\2023_20364444\WS5\WS5_Qt\ModelPart.h" />
+    <ClCompile Include="C:\Users\LLR User\2023_20364444\WS5\WS5_Qt\ModelPartList.cpp" />
+    <ClInclude Include="C:\Users\LLR User\2023_20364444\WS5\WS5_Qt\ModelPartList.h" />
     <ClInclude Include="C:\Users\LLR User\2023_20364444\WS5\build\WS5_Qt_autogen\include_Debug\ui_mainwindow.h" />
     <None Include="C:\Users\LLR User\2023_20364444\WS5\build\WS5_Qt_autogen\autouic_Debug.stamp">
     </None>

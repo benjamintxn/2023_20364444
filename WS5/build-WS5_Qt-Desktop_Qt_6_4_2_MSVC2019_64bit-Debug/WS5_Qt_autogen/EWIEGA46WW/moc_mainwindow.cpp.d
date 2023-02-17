@@ -1,4 +1,4 @@
-C:/Users/LLR\ User/2023_20364444/WS5/build/WS5_Qt_autogen/include_Debug/EWIEGA46WW/moc_mainwindow.cpp: C:/Users/LLR\ User/2023_20364444/WS5/WS5_Qt/mainwindow.h \
+C:/Users/LLR\ User/2023_20364444/WS5/build-WS5_Qt-Desktop_Qt_6_4_2_MSVC2019_64bit-Debug/WS5_Qt_autogen/EWIEGA46WW/moc_mainwindow.cpp: C:/Users/LLR\ User/2023_20364444/WS5/WS5_Qt/mainwindow.h \
   C:/Qt/6.4.2/msvc2019_64/include/QtCore/QAbstractItemModel \
   C:/Qt/6.4.2/msvc2019_64/include/QtCore/QList \
   C:/Qt/6.4.2/msvc2019_64/include/QtCore/QModelIndex \

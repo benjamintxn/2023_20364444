@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-9fb46ec3ea72630dc093.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "WS5_Qt",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "WS5_Qt::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-WS5_Qt-Debug-92e586fcab2ab19b5f2e.json",
+					"name" : "WS5_Qt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "WS5_Qt_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-WS5_Qt_autogen-Debug-120323377cf9a3f097cc.json",
+					"name" : "WS5_Qt_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "WS5_Qt_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-WS5_Qt_autogen_timestamp_deps-Debug-1a39cb0542f5c1b31ff1.json",
+					"name" : "WS5_Qt_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/LLR User/2023_20364444/WS5/build-WS5_Qt-Desktop_Qt_6_4_2_MSVC2019_64bit-Debug",
+		"source" : "C:/Users/LLR User/2023_20364444/WS5/WS5_Qt"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

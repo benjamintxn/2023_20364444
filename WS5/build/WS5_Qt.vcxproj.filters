@@ -10,6 +10,12 @@
     <ClCompile Include="C:\Users\LLR User\2023_20364444\WS5\WS5_Qt\mainwindow.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\LLR User\2023_20364444\WS5\WS5_Qt\ModelPart.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\LLR User\2023_20364444\WS5\WS5_Qt\ModelPartList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Users\LLR User\2023_20364444\WS5\build\WS5_Qt_autogen\mocs_compilation_Release.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -22,6 +28,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\Users\LLR User\2023_20364444\WS5\WS5_Qt\mainwindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\LLR User\2023_20364444\WS5\WS5_Qt\ModelPart.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\LLR User\2023_20364444\WS5\WS5_Qt\ModelPartList.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\LLR User\2023_20364444\WS5\build\WS5_Qt_autogen\include_Debug\ui_mainwindow.h">
