@@ -165,13 +165,13 @@ public:
     void retranslateUi(QDialog *Option_Dialog)
     {
         Option_Dialog->setWindowTitle(QCoreApplication::translate("Option_Dialog", "Dialog", nullptr));
-        checkBox->setText(QCoreApplication::translate("Option_Dialog", "Visible", nullptr));
+        checkBox->setText(QCoreApplication::translate("Option_Dialog", "CheckBox", nullptr));
         label_3->setText(QCoreApplication::translate("Option_Dialog", "Red", nullptr));
         label->setText(QCoreApplication::translate("Option_Dialog", "Green", nullptr));
         label_2->setText(QCoreApplication::translate("Option_Dialog", "Blue", nullptr));
-        label_4->setText(QString());
-        label_5->setText(QString());
-        label_6->setText(QString());
+        label_4->setText(QCoreApplication::translate("Option_Dialog", "Red is: ", nullptr));
+        label_5->setText(QCoreApplication::translate("Option_Dialog", "Green is:", nullptr));
+        label_6->setText(QCoreApplication::translate("Option_Dialog", "Blue is:", nullptr));
     } // retranslateUi
 
 };
