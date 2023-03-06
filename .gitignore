@@ -18,6 +18,7 @@
 *.lib
 *.obj
 *.dll
+build/*
 
 ### CMake ###
 CMakeLists.txt.user
