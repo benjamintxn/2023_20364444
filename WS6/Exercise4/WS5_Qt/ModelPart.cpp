@@ -1,9 +1,20 @@
+/**     @file ModelPart.cpp
+  *
+  *     EEEE2046 - Software Engineering & VR Project
+  *
+  *     Template for model parts that will be added as treeview items
+  *
+  *     P Evans 2022
+  */
+
 #include "ModelPart.h"
-#include <vtkSTLReader.h>
-#include <vtkSmartPointer.h>
-#include <vtkDataSetMapper.h>
-#include <vtkPolyDataMapper.h>
-#include <vtkActor.h>
+
+
+/* Commented out for now, will be uncommented later when you have
+ * installed the VTK library
+ */
+//#include <vtkSmartPointer.h>
+//#include <vtkDataSetMapper.h>
 
 
 
@@ -104,12 +115,14 @@ unsigned char ModelPart::getColourG() {
     return 0;   // needs updating
 }
 
+
 unsigned char ModelPart::getColourB() {
     /* This is a placeholder function that will be used in the next worksheet */
     
     /* As the name suggests ... */
     return 0;   // needs updating
 }
+
 
 void ModelPart::setVisible(bool isVisible) {
     /* This is a placeholder function that will be used in the next worksheet */
@@ -125,27 +138,24 @@ bool ModelPart::visible() {
 }
 
 void ModelPart::loadSTL( QString fileName ) {
-
-    vtkSmartPointer<vtkSTLReader> reader = vtkSmartPointer<vtkSTLReader>::New();
-
-    reader->SetFileName(fileName.toStdString().c_str());
-    reader->Update();
-    file = reader;
-
-    vtkNew<vtkPolyDataMapper> pMapper;
-    pMapper->SetInputConnection(reader->GetOutputPort());
-
-    vtkNew<vtkActor> pActor;
-    pActor->SetMapper(pMapper);
-    actor = pActor;
+    /* This is a placeholder function that will be used in the next worksheet */
     
+    /* 1. Use the vtkSTLReader class to load the STL file 
+     *     https://vtk.org/doc/nightly/html/classvtkSTLReader.html
+     */
+
+    /* 2. Initialise the part's vtkMapper */
+    
+    /* 3. Initialise the part's vtkActor and link to the mapper */
 }
 
-vtkSmartPointer<vtkActor> ModelPart::getActor() {
-
-    return actor;
-
-}
+//vtkSmartPointer<vtkActor> ModelPart::getActor() {
+    /* This is a placeholder function that will be used in the next worksheet */
+    
+    /* Needs to return a smart pointer to the vtkActor to allow
+     * part to be rendered.
+     */
+//}
 
 //vtkActor* ModelPart::getNewActor() {
     /* This is a placeholder function that will be used in the next worksheet.

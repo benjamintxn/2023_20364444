@@ -13,7 +13,6 @@
 #include <vtkNew.h>
 #include <vtkProperty.h>
 #include <vtkCamera.h>
-#include "ModelPart.h"
 
 MainWindow::MainWindow(QWidget* parent)
     : QMainWindow(parent)
@@ -145,13 +144,12 @@ void MainWindow::handleTreeClicked() {
 
 	emit statusUpdateMessage(QString("The selected item is: ")+text, 0);
 
-	updateRender();
-
 }
 
 void MainWindow::on_actionOpen_File_triggered() {
 
-	emit statusUpdateMessage(QString("Open File action is triggered"), 0);
+	emit statusUpdateMessage(QString("Open File action triggered"), 0);
+
 	QString fileName = QFileDialog::getOpenFileName(this, tr("Open File"), "C:\\", tr("STL Files(*.stl);;Text Files(*.txt)"));
 	QModelIndex index = ui->treeView->currentIndex();
 
@@ -161,8 +159,6 @@ void MainWindow::on_actionOpen_File_triggered() {
 	if (fileInfo.exists() && fileInfo.isFile() && fileInfo.suffix().toLower() == "stl") {
 
 		QModelIndex childPartIndex = partList->appendChild(index, { fileInfo.baseName(), visible });
-		ModelPart* childPart = static_cast<ModelPart*>(childPartIndex.internalPointer());
-		childPart->loadSTL(fileName);
 
 	}
 
@@ -199,41 +195,3 @@ void MainWindow::on_actionItem_Options_triggered() {
 
 }
 
-void MainWindow::updateRender() {
-
-	QModelIndex index = ui->treeView->currentIndex();
-	renderer->RemoveAllViewProps();
-	updateRenderFromTree(index);
-	vtkSmartPointer<vtkRenderWindow> renderWindow = renderer->GetRenderWindow();
-	renderWindow->Render();
-	ui->vtkWidget->repaint();
-
-}
-
-void MainWindow::updateRenderFromTree(const QModelIndex& index) {
-
-	if (index.isValid()) {
-
-		ModelPart* selectedPart = static_cast<ModelPart*>(index.internalPointer());
-
-		renderer->AddActor(selectedPart->getActor());
-
-		renderer->ResetCamera();
-		renderer->ResetCameraClippingRange();
-
-	}
-
-	if (!partList->hasChildren(index) || (index.flags() & Qt::ItemNeverHasChildren)) {
-
-		return;
-
-	}
-
-	int rows = partList->rowCount(index);
-	for (int i = 0; i < rows; i++) {
-
-		updateRenderFromTree(partList->index(i, 0, index));
-
-	}
-
-}
