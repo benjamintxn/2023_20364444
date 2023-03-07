@@ -37,7 +37,7 @@
        </widget>
       </item>
       <item>
-       <widget class="OVTKOpenGLNativeWidget" name="widget" native="true">
+       <widget class="QVTKOpenGLNativeWidget" name="vtkWidget" native="true">
         <property name="enabled">
          <bool>true</bool>
         </property>
@@ -143,9 +143,9 @@
  </widget>
  <customwidgets>
   <customwidget>
-   <class>OVTKOpenGLNativeWidget</class>
+   <class>QVTKOpenGLNativeWidget</class>
    <extends>QWidget</extends>
-   <header>ovtkopenglnativewidget.h</header>
+   <header>qvtkopenglnativewidget.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

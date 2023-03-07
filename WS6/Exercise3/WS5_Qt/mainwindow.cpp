@@ -7,12 +7,48 @@
 #include "./ui_mainwindow.h"
 #include "option_dialog.h"
 #include <QCheckBox>
+#include <vtkPolyDataMapper.h>
+#include <vtkCylinderSource.h>
+#include <vtkActor.h>
+#include <vtkNew.h>
+#include <vtkProperty.h>
+#include <vtkCamera.h>
 
 MainWindow::MainWindow(QWidget* parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow) {
 
-    ui->setupUi(this);
+	ui->setupUi(this);
+
+	/*Link a render window with the Qt widget*/
+	renderWindow = vtkSmartPointer<vtkGenericOpenGLRenderWindow>::New();
+	ui->vtkWidget->setRenderWindow(renderWindow);
+
+	/*Add a renderer*/
+	renderer = vtkSmartPointer<vtkRenderer>::New();
+	renderWindow->AddRenderer(renderer);
+
+	/*Create an object and add to renderer*/
+	vtkNew<vtkCylinderSource> cylinder;
+	cylinder->SetResolution(8);
+
+	vtkNew<vtkPolyDataMapper> cylinderMapper;
+	cylinderMapper->SetInputConnection(cylinder->GetOutputPort());
+
+	vtkNew<vtkActor> cylinderActor;
+	cylinderActor->SetMapper(cylinderMapper);
+	cylinderActor->GetProperty()->SetColor(1., 0., 0.35);
+	cylinderActor->RotateX(30.0);
+	cylinderActor->RotateY(-45.0);
+
+	renderer->AddActor(cylinderActor);
+
+	/*Reset Camera*/
+	renderer->ResetCamera();
+	renderer->GetActiveCamera()->Azimuth(30);
+	renderer->GetActiveCamera()->Elevation(30);
+	renderer->ResetCameraClippingRange();
+
     connect(ui->pushButton, &QPushButton::released, this, &MainWindow::handleButton);
 	connect(ui->pushButton_2, &QPushButton::released, this, &MainWindow::handleButton_2);
     connect(this, &MainWindow::statusUpdateMessage, ui->statusbar, &QStatusBar::showMessage);

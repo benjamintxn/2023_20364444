@@ -6,6 +6,9 @@
 #include "ModelPartList.h"
 #include "qfiledialog.h"
 #include "option_dialog.h"
+#include <vtkSmartPointer.h>
+#include <vtkRenderer.h>
+#include <vtkGenericOpenGLRenderWindow.h>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -38,6 +41,9 @@ private slots:
 private:
     Ui::MainWindow *ui;
 	ModelPartList* partList;
+
+    vtkSmartPointer<vtkRenderer> renderer;
+    vtkSmartPointer<vtkGenericOpenGLRenderWindow> renderWindow;
 
 };
 
