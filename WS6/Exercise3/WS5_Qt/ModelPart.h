@@ -83,7 +83,6 @@ public:
       */
     int row() const;
 
-
     /** Set colour
       * (0-255 RGB values as ints)
       */
@@ -116,7 +115,7 @@ public:
     /** Return new actor for use in VR
       * @return pointer to new actor
       */
-    //vtkActor* getNewActor();
+    vtkActor* getNewActor();
 
 private:
     QList<ModelPart*>                           m_childItems;       /**< List (array) of child items */
@@ -131,6 +130,4 @@ private:
     vtkColor3<unsigned char>                    colour;             /**< User defineable colour */
 };  
 
-
 #endif
-

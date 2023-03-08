@@ -144,6 +144,8 @@ void MainWindow::handleTreeClicked() {
 
 	emit statusUpdateMessage(QString("The selected item is: ")+text, 0);
 
+	updateRender();
+
 }
 
 void MainWindow::on_actionOpen_File_triggered() {
@@ -159,6 +161,8 @@ void MainWindow::on_actionOpen_File_triggered() {
 	if (fileInfo.exists() && fileInfo.isFile() && fileInfo.suffix().toLower() == "stl") {
 
 		QModelIndex childPartIndex = partList->appendChild(index, { fileInfo.baseName(), visible });
+		ModelPart* childItem = static_cast<ModelPart*>(childPartIndex.internalPointer());
+		childItem->loadSTL(fileName);
 
 	}
 
@@ -195,3 +199,42 @@ void MainWindow::on_actionItem_Options_triggered() {
 
 }
 
+void MainWindow::updateRender() {
+
+	QModelIndex index = ui->treeView->currentIndex();
+	
+	renderer->RemoveAllViewProps();
+	updateRenderFromTree(index);
+	vtkSmartPointer<vtkRenderWindow> renderWindow = renderer->GetRenderWindow();
+	renderWindow->Render();
+	ui->vtkWidget->repaint();
+
+}
+
+void MainWindow::updateRenderFromTree(const QModelIndex& index) {
+
+	if (index.isValid()) {
+
+		ModelPart* selectedPart = static_cast<ModelPart*>(index.internalPointer());
+
+		renderer->AddActor(selectedPart->getActor());
+
+		renderer->ResetCamera();
+		renderer->ResetCameraClippingRange();
+
+		if (!partList->hasChildren(index) || index.flags() & Qt::ItemNeverHasChildren) {
+
+			return;
+
+		}
+
+		int rows = partList->rowCount(index);
+		for (int i = 0; i < rows; i++) {
+
+			updateRenderFromTree(partList->index(i, 0, index));
+
+		}
+
+	}
+
+}

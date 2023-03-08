@@ -8,6 +8,7 @@
   */
 
 #include "ModelPart.h"
+#include <vtkPolyDataMapper.h>
 
 
 /* Commented out for now, will be uncommented later when you have
@@ -138,24 +139,24 @@ bool ModelPart::visible() {
 }
 
 void ModelPart::loadSTL( QString fileName ) {
-    /* This is a placeholder function that will be used in the next worksheet */
     
-    /* 1. Use the vtkSTLReader class to load the STL file 
-     *     https://vtk.org/doc/nightly/html/classvtkSTLReader.html
-     */
+    file = vtkSmartPointer<vtkSTLReader>::New();
+    file->SetFileName(fileName.toStdString().c_str());
+    file->Update();
 
-    /* 2. Initialise the part's vtkMapper */
-    
-    /* 3. Initialise the part's vtkActor and link to the mapper */
+    mapper = vtkSmartPointer<vtkPolyDataMapper>::New();
+    mapper->SetInputConnection(file->GetOutputPort());
+
+    actor = vtkSmartPointer<vtkActor>::New();
+    actor->SetMapper(mapper);
+
 }
 
-//vtkSmartPointer<vtkActor> ModelPart::getActor() {
-    /* This is a placeholder function that will be used in the next worksheet */
+vtkSmartPointer<vtkActor> ModelPart::getActor() {
     
-    /* Needs to return a smart pointer to the vtkActor to allow
-     * part to be rendered.
-     */
-//}
+    return actor;
+
+}
 
 //vtkActor* ModelPart::getNewActor() {
     /* This is a placeholder function that will be used in the next worksheet.

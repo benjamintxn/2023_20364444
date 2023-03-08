@@ -31,9 +31,7 @@ public slots:
     void handleButton_2();
     void handleTreeClicked();
     void on_actionOpen_File_triggered();
-
     void updateRender();
-
     void updateRenderFromTree(const QModelIndex& index);
 
 signals:
@@ -45,7 +43,6 @@ private slots:
 private:
     Ui::MainWindow *ui;
 	ModelPartList* partList;
-
     vtkSmartPointer<vtkRenderer> renderer;
     vtkSmartPointer<vtkGenericOpenGLRenderWindow> renderWindow;
 

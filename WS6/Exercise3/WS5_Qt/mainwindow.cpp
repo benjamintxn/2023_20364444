@@ -1,3 +1,4 @@
+#include "VRRenderThread.h"
 #include <QMessageBox>
 #include <QStatusBar>
 #include <QLineEdit>
@@ -105,7 +106,18 @@ MainWindow::~MainWindow() {
 
 void MainWindow::handleButton() {
 
-    emit statusUpdateMessage(QString("Add button was clicked"), 0);
+	// Get the index of the selected item
+	QModelIndex index = ui->treeView->currentIndex();
+
+	// Get a point to the item from the index
+	ModelPart* selectedPart = static_cast<ModelPart*>(index.internalPointer());
+
+	VRRenderThread *newVRClass = new VRRenderThread;
+
+	newVRClass->addActorOffline(selectedPart->getNewActor());
+
+	newVRClass->start();
+
 
 }
 

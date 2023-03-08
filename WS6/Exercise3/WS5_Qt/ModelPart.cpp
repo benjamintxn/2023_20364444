@@ -5,19 +5,15 @@
 #include <vtkPolyDataMapper.h>
 #include <vtkActor.h>
 
-
-
 ModelPart::ModelPart(const QList<QVariant>& data, ModelPart* parent )
     : m_itemData(data), m_parentItem(parent) {
 
     /* You probably want to give the item a default colour */
 }
 
-
 ModelPart::~ModelPart() {
     qDeleteAll(m_childItems);
 }
-
 
 void ModelPart::appendChild( ModelPart* item ) {
     /* Add another model part as a child of this part
@@ -26,7 +22,6 @@ void ModelPart::appendChild( ModelPart* item ) {
     item->m_parentItem = this;
     m_childItems.append(item);
 }
-
 
 ModelPart* ModelPart::child( int row ) {
     /* Return pointer to child item in row below this item.
@@ -41,7 +36,6 @@ int ModelPart::childCount() const {
      */
     return m_childItems.count();
 }
-
 
 int ModelPart::columnCount() const {
     /* Count number of columns (properties) that this item has.
@@ -60,7 +54,6 @@ QVariant ModelPart::data(int column) const {
     return m_itemData.at(column);
 }
 
-
 void ModelPart::set(int column, const QVariant &value) {
     /* Set the data associated with a column of this item 
      */
@@ -70,11 +63,9 @@ void ModelPart::set(int column, const QVariant &value) {
     m_itemData.replace(column, value);
 }
 
-
 ModelPart* ModelPart::parentItem() {
     return m_parentItem;
 }
-
 
 int ModelPart::row() const {
     /* Return the row index of this item, relative to it's parent.
@@ -147,30 +138,15 @@ vtkSmartPointer<vtkActor> ModelPart::getActor() {
 
 }
 
-//vtkActor* ModelPart::getNewActor() {
-    /* This is a placeholder function that will be used in the next worksheet.
-     * 
-     * The default mapper/actor combination can only be used to render the part in 
-     * the GUI, it CANNOT also be used to render the part in VR. This means you need
-     * to create a second mapper/actor combination for use in VR - that is the role
-     * of this function. */
+vtkActor* ModelPart::getNewActor() {
      
+    vtkNew<vtkPolyDataMapper> pointMapper;
+    pointMapper->SetInputConnection(file->GetOutputPort());
      
-     /* 1. Create new mapper */
+    vtkNew<vtkActor> pointActor;
+    pointActor->SetMapper(pointMapper);
      
-     /* 2. Create new actor and link to mapper */
-     
-     /* 3. Link the vtkProperties of the original actor to the new actor. This means 
-      *    if you change properties of the original part (colour, position, etc), the
-      *    changes will be reflected in the GUI AND VR rendering.
-      *    
-      *    See the vtkActor documentation, particularly the GetProperty() and SetProperty()
-      *    functions.
-      */
+    return pointActor;
     
-
-    /* The new vtkActor pointer must be returned here */
-//    return nullptr;
-    
-//}
+}
 
