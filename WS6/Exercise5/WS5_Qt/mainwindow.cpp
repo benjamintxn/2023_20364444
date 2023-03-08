@@ -109,7 +109,7 @@ void MainWindow::handleButton() {
 
 	ModelPart* selectedPart = static_cast<ModelPart*>(index.internalPointer());
 
-	VRRenderThread* renderThread;
+	VRRenderThread* renderThread = new VRRenderThread;
 
 	if (selectedPart->getNewActor() == nullptr) {
 
