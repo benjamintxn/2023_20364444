@@ -6,7 +6,7 @@ on:
 
 jobs:
   # The job that will build Worksheet after:
-  deploy-WS7
+  deploy-WS7:
 
     # Defines the operating system for the virtual computer
     runs-on: ubuntu-latest
