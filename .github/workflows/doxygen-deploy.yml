@@ -11,27 +11,27 @@ jobs:
     # Defines the operating system for the virtual computer
     runs-on: ubuntu-latest
 
-	# A list of steps to follow to completet the build
-	# (a list of commands to execute on the virtual computer)
-	steps:
+    # A list of steps to follow to completet the build
+    # (a list of commands to execute on the virtual computer)
+    steps:
 
-	# This is a predefined action that checks out a copy of your code
-	- name: Checkout
-	uses: actions/checkout@v2
+      # This is a predefined action that checks out a copy of your code
+      - name: Checkout
+        uses: actions/checkout@v2
 
-  - name: Install doxygen
-	run: sudo apt-get install -y doxygen
+      - name: Install doxygen
+        run: sudo apt-get install -y doxygen
 
-  # Run Doxygen on Worksheet 7 folder
-  - name: Rune Doxygen
-    working-directory: ${{github.workspace}}/WS7
-	run: doxygen
+      # Run Doxygen on Worksheet 7 folder
+      - name: Rune Doxygen
+        working-directory: ${{github.workspace}}/WS7
+        run: doxygen
 
-  # Deploy html output from Doxygen to ghpages branches
-  - name: Deploy
-	uses: JamesIves/github-pages-deploy-action@v4.2.5
-	with:
-	  # The branch the action should deploy to
-	  branch: gh-pages
-	  # The folder the action should deploy
-	  folder: ${{github.workspace}}/WS7/html
+      # Deploy html output from Doxygen to ghpages branches
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4.2.5
+        with:
+          # The branch the action should deploy to
+          branch: gh-pages
+          # The folder the action should deploy
+          folder: ${{github.workspace}}/WS7/html
