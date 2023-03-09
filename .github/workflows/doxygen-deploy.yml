@@ -23,8 +23,8 @@ jobs:
       run: sudo apt-get install -y doxygen
 
     # Run Doxygen on Worksheet 7 folder
-    - name: Rune Doxygen
-      working-directory: ${{github.workspace}}/WS7
+    - name: Run Doxygen
+      working-directory: ${{github.workspace}}/WS7/Exercise1
       run: doxygen
 
     # Deploy html output from Doxygen to ghpages branches
